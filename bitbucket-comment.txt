@@ -1,0 +1,3 @@
+ENDPOINT=https://api.bitbucket.org/1.0/repositories/$$USER/$$REPO/pullrequests/2/comments
+TYPE=plain
+content=${STR}

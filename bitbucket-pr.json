@@ -1,0 +1,28 @@
+ENDPOINT=https://api.bitbucket.org/2.0/repositories/$$USER/$$REPO/pullrequests
+TYPE=json
+{
+    "title": ${NSTR},
+    "description": ${NSTR},
+    "state": ${NVAL:OPEN,CLOSED,NOTAREALSTATE},
+    "open": ${BOOL},
+    "closed": ${BOOL},
+    "source":{
+      "branch":{
+         "name":"$$SRCBRANCH"
+      },
+      "repository":{
+         "full_name":"$$USER/$$REPO"
+      }
+    },
+    "destination":{
+      "branch":{
+         "name":"$$DSTBRANCH"
+      }
+    },
+    "reviewers":[
+      {
+         "username": ""
+      }
+    ],
+    "close_source_branch":false
+}

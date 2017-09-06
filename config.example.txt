@@ -1,0 +1,7 @@
+# Your Bitbucket username
+USERNAME=<USER>
+# Your application password https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html
+PASSWORD=<APP_PASSWORD>
+# The URL slug of the repo to use.
+# For instance, https://bitbucket.org/Plazmaz/Test/ has a slug of "Test".
+REPOSITORY=<YOUR_REPO_SLUG>
